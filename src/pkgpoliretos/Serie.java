@@ -84,4 +84,101 @@ public class Serie {
         }
         System.out.println();
     }
+
+
+    public void g1Sc08letrasRepetidasPar(int n) {
+        char letra = 'a';
+        int repeticiones = 2;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < repeticiones; j++) {
+            System.out.print(letra);
+            }
+            if (i < n - 1) System.out.print(", ");
+            letra++;
+            repeticiones += 2;
+        }
+        System.out.println();
+    }
+
+
+    public void g1Sc09letrasRepetidasImpar(int n) {
+        char letra = 'a';
+        int repeticiones = 1;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < repeticiones; j++) {
+            System.out.print(letra);
+            }
+            if (i < n - 1) System.out.print(", ");
+            letra++;
+            repeticiones += 2;
+        }
+        System.out.println();
+    }
+ 
+    public void g1Sc10letrasConRepeticion(int n) {
+        char letra = 'a';
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(letra);
+            }
+            if (i < n) System.out.print(", ");
+            letra++;
+        }
+        System.out.println();
+    }
+
+    public void g1Sc11gruposDeNumeral(int n) {
+        int cantidad = 2;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < cantidad; j++) {
+                System.out.print("#");
+            }
+            if (i < n - 1) System.out.print(", ");
+            cantidad += 2;
+        }
+        System.out.println();
+    }
+
+    public void g1Sc12vocalesRepetidas(int n) {
+        char[] vocales = { 'a', 'e', 'i', 'o', 'u' };
+        for (int i = 0; i < n; i++) {
+            int indiceVocal = i % 5;
+            int repeticiones = indiceVocal + 1;
+
+            for (int j = 0; j < repeticiones; j++) {
+                System.out.print(vocales[indiceVocal]);
+            }
+            if (i < n - 1) System.out.print(", ");
+        }
+        System.out.println();
+    }
+
+    public void g1Sc13letraRepetidaCreciente(int n) {
+        char letra = 'A';
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(letra);
+            }
+            if (i < n) System.out.print(", ");
+            letra++;
+
+            if (letra > 'Z') letra = 'A'; 
+        }
+        System.out.println();
+    }
+
+    public void g1Sc14alfabeto(int n) {
+        char letra = 'A';
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(letra);
+            if (i < n - 1) System.out.print(", ");
+            letra++;
+
+            if (letra > 'Z') letra = 'A';
+        }
+        System.out.println();
+    }
+
 }

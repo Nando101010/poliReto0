@@ -24,6 +24,13 @@ public class Controlador {
             System.out.println("5. SC05. Indicador direccional cíclico (\\, |, /, -)");
             System.out.println("6. SC06. Letras consecutivas (a, b, c...)");
             System.out.println("7. SC07. Letra y signo alternados (a, +, c, -...)");
+            System.out.println("8. SC08. Letras repetidas (aa, bbbb, cccccc, dddddddd...)");
+            System.out.println("9. SC09. Letras repetidas (a, bbb, ccccc, ddddddd...)");
+            System.out.println("10. SC10. Letras con repetición (a, bb, ccc, dddd...)");
+            System.out.println("11. SC11. Grupos de numeral (#, ##, ###...)");
+            System.out.println("12. SC12. Vocales repetidas (a, eee, iiiii, ooooooo...)");
+            System.out.println("13. SC13. Letra repetida creciente (A, BB, CCC, DDDD...)");
+            System.out.println("14. SC14. Alfabeto (A, B, C, D...)");
             System.out.println("0. Salir");
             System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
@@ -50,6 +57,27 @@ public class Controlador {
                     break;
                 case 7:
                     serie.g1Sc07LetraYSigno(n);
+                    break;
+                case 8: 
+                     serie.g1Sc08letrasRepetidasPar(n);
+                    break;
+                case 9: 
+                     serie.g1Sc09letrasRepetidasImpar(n);
+                    break;
+                case 10:
+                    serie.g1Sc10letrasConRepeticion(n);
+                    break;
+                case 11:
+                    serie.g1Sc11gruposDeNumeral(n);
+                    break;
+                case 12:
+                    serie.g1Sc12vocalesRepetidas(n);
+                    break;
+                case 13:
+                    serie.g1Sc13letraRepetidaCreciente(n);
+                    break;
+                case 14:
+                    serie.g1Sc14alfabeto(n);
                     break;
                 case 0:
                     System.out.println("Saliendo del programa...");
