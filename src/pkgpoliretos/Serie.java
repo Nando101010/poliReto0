@@ -85,7 +85,6 @@ public class Serie {
         System.out.println();
     }
 
-
     public void g1Sc08letrasRepetidasPar(int n) {
         char letra = 'a';
         int repeticiones = 2;
@@ -99,7 +98,6 @@ public class Serie {
         }
         System.out.println();
     }
-
 
     public void g1Sc09letrasRepetidasImpar(int n) {
         char letra = 'a';
