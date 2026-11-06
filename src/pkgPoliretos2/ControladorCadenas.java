@@ -125,4 +125,21 @@ public class ControladorCadenas {
         }
         return sb.toString();
     }
+
+
+public void ejecutarEjercicios(String frasePrueba) {
+        System.out.println("=== PRUEBAS DE CONTROLADOR CADENAS ===");
+        System.out.println("Frase de prueba: \"" + frasePrueba + "\"\n");
+
+        System.out.println("C01 - Cantidad de vocales: " + contarVocales(frasePrueba));
+        System.out.println("C02 - Cantidad de letras: " + contarLetras(frasePrueba));
+        System.out.println("C03 - Eliminar vocal 'a': " + eliminarVocal(frasePrueba, 'a'));
+        System.out.println("C04 - Eliminar letra 's': " + eliminarLetra(frasePrueba, 's'));
+        System.out.println("C05 - Invertir vocales mayúsculas: " + invertirVocalesMayusculas(frasePrueba));
+        System.out.println("C06 - Invertir letras mayúsculas (sin vocales): " + invertirLetrasMayusculas(frasePrueba));
+        System.out.println("C07 - Mayúsculas sin la letra 'J': " + mayusculasSinJ("Java es genial"));
+        System.out.println("C08 - Palabra aleatoria del arreglo: " + palabraAleatoria());
+        System.out.println("C08 - ¿'roma' y 'amor' son anagramas?: " + esAnagrama("roma", "amor"));
+        System.out.println("C09 - Alternar mayús/minús: " + alternarMayusMinus(frasePrueba));
+    }
 }

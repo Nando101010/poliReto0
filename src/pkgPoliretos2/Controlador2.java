@@ -34,6 +34,8 @@ private int n;
                     break;
                 case 2:
                     System.out.println("\n--- Cargando Bloque: Cadenas de Caracteres (n = " + n + ") ---");
+                    ControladorCadenas objCadenas = new ControladorCadenas();
+                    objCadenas.ejecutarEjercicios("Hola, ¿cómo estás?");
                     break;
                 case 3:
                     System.out.println("\n--- Cargando Bloque: Arrays y Matrices (n = " + n + ") ---");
