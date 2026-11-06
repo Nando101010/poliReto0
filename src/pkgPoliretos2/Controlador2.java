@@ -15,55 +15,47 @@ private int n;
 
         do {
             System.out.println("\n========= MENÚ PRINCIPAL - POLIRETOS 2 =========");
-            System.out.println("1. Series Numéricas");
-            System.out.println("2. Series de Caracteres");
-            System.out.println("3. Figuras");
-            System.out.println("4. Cadenas de Caracteres");
-            System.out.println("5. Arrays y Matrices");
-            System.out.println("6. Animaciones de Carga (Loading)");
-            System.out.println("7. Recursión");
-            System.out.println("8. Grafos y Autómatas");
-            System.out.println("9. Salir");
+            System.out.println("1. Figuras");
+            System.out.println("2. Cadenas de Caracteres");
+            System.out.println("3. Arrays y Matrices");
+            System.out.println("4. Animaciones de Carga (Loading)");
+            System.out.println("5. Recursión");
+            System.out.println("6. Grafos y Autómatas");
+            System.out.println("7. Salir");
             System.out.print("Seleccione una opción de bloque: ");
             
             opcion = scanner.nextInt();
 
             switch (opcion) {
                 case 1:
-                    System.out.println("\n--- Cargando Bloque: Series Numéricas (n = " + n + ") ---");
-                    break;
-                case 2:
-                    System.out.println("\n--- Cargando Bloque: Series de Caracteres (n = " + n + ") ---");
-                    break;
-                case 3:
                     System.out.println("\n--- Cargando Bloque: Figuras (n = " + n + ") ---");
                     figuras objFiguras = new figuras();
                     objFiguras.imprimirTodas(n);
                     break;
-                case 4:
+                case 2:
                     System.out.println("\n--- Cargando Bloque: Cadenas de Caracteres (n = " + n + ") ---");
                     break;
-                case 5:
+                case 3:
                     System.out.println("\n--- Cargando Bloque: Arrays y Matrices (n = " + n + ") ---");
                     break;
-                case 6:
+                case 4:
                     System.out.println("\n--- Cargando Bloque: Animaciones de Carga / Loading (n = " + n + ") ---");
                     break;
-                case 7:
+                case 5:
                     System.out.println("\n--- Cargando Bloque: Recursión (n = " + n + ") ---");
                     g1MostrarRecursion(scanner);
                     break;
-                case 8:
+                case 6:
                     System.out.println("\n--- Cargando Bloque: Grafos y Autómatas (n = " + n + ") ---");
                     g1MostrarAutomatas(scanner);
                     break;
-                case 9:
+                case 7:
                     System.out.println("Saliendo del sistema. ¡Buen trabajo en equipo, grupo g1!");
                     break;
                 default:
                     System.out.println("Opción inválida. Intente de nuevo.");
             }
-        } while (opcion != 9);
+        } while (opcion != 7);
         
         scanner.close();
     }
