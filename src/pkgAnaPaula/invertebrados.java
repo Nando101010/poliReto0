@@ -28,6 +28,7 @@ public class invertebrados extends fauna {
         System.out.println("Tipo de respiración: " + tipoRespiracion);
         System.out.println("Sistema locomotor: " + sistemaLocomotor);
         System.out.println("Tipo de exoesqueleto: " + tipoExoesqueleto);
+        respirar();
         moverse();
         desarrollarMetamorfosis();
     }

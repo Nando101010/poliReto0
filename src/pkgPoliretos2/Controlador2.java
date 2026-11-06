@@ -37,6 +37,8 @@ private int n;
                     break;
                 case 3:
                     System.out.println("\n--- Cargando Bloque: Figuras (n = " + n + ") ---");
+                    figuras objFiguras = new figuras();
+                    objFiguras.imprimirTodas(n);
                     break;
                 case 4:
                     System.out.println("\n--- Cargando Bloque: Cadenas de Caracteres (n = " + n + ") ---");

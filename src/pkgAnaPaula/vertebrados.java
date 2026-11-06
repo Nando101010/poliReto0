@@ -28,6 +28,7 @@ public class vertebrados extends fauna {
         System.out.println("Tipo de respiración: " + tipoRespiracion);
         System.out.println("Sistema locomotor: " + sistemaLocomotor);
         System.out.println("Estructura ósea: " + estructuraOsea);
+        respirar();
         moverse();
         regularTemperatura();
     }
