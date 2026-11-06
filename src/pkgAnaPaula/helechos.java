@@ -22,8 +22,13 @@ public class helechos extends flora {
     public void mostrarInformacion(){
         mostrarReino();
         System.out.println("Nombre: " + nombre);
+        System.out.println("Clasificación: " + clasificacion);
+        System.out.println("Edad: " + edad);
+        System.out.println("Hábitat: " + habitat);
         System.out.println("Propiedades: Hojas tipo " + tipoHojas + ", Número de frondas: " + numeroFrondas);
+        respirar();
         hacerFotosintesis();
+        liberarEsporas();
     }
 
 }
