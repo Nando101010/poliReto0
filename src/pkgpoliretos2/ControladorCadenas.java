@@ -1,4 +1,4 @@
-package pkgpoliretos2;
+package pkgPoliretos2;
 
 import java.util.Arrays;
 import java.util.Random;
